@@ -63,7 +63,7 @@
   </url>
   <url>
     <loc>https://agentic-patterns.com/patterns/agent-driven-research</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://agentic-patterns.com/patterns/agent-first-tool-discovery</loc>
@@ -143,7 +143,7 @@
   </url>
   <url>
     <loc>https://agentic-patterns.com/patterns/capability-escrow-receipt</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://agentic-patterns.com/patterns/chain-of-thought-monitoring-interruption</loc>
@@ -219,7 +219,7 @@
   </url>
   <url>
     <loc>https://agentic-patterns.com/patterns/criticgpt-style-evaluation</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://agentic-patterns.com/patterns/cross-agent-lesson-sharing</loc>
@@ -459,7 +459,7 @@
   </url>
   <url>
     <loc>https://agentic-patterns.com/patterns/lethal-trifecta-threat-model</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://agentic-patterns.com/patterns/llm-map-reduce-pattern</loc>
@@ -739,7 +739,7 @@
   </url>
   <url>
     <loc>https://agentic-patterns.com/patterns/subject-hygiene</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://agentic-patterns.com/patterns/swarm-migration-pattern</loc>
@@ -759,7 +759,7 @@
   </url>
   <url>
     <loc>https://agentic-patterns.com/patterns/tool-capability-compartmentalization</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://agentic-patterns.com/patterns/tool-search-lazy-loading</loc>
@@ -767,7 +767,7 @@
   </url>
   <url>
     <loc>https://agentic-patterns.com/patterns/tool-selection-guide</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://agentic-patterns.com/patterns/tool-use-incentivization-via-reward-shaping</loc>
@@ -783,7 +783,7 @@
   </url>
   <url>
     <loc>https://agentic-patterns.com/patterns/transitive-vouch-chain-trust</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://agentic-patterns.com/patterns/tree-of-thought-reasoning</loc>
@@ -819,7 +819,7 @@
   </url>
   <url>
     <loc>https://agentic-patterns.com/patterns/working-memory-via-todos</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://agentic-patterns.com/patterns/workspace-native-multi-agent-orchestration</loc>
