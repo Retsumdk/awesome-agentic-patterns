@@ -4,291 +4,284 @@
         <description><![CDATA[New and updated AI agent design patterns.]]></description>
         <link>https://agentic-patterns.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 26 Sep 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 13 Oct 2026 00:00:00 GMT</lastBuildDate>
         <atom:link href="https://agentic-patterns.com/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
-            <title><![CDATA[402-First Machine Payments (Price-Before-Work Tool Purchases)]]></title>
-            <description><![CDATA[Server returns an HTTP 402 price quote before doing work, and the agent pays the exact amount only if it fits its budget cap]]></description>
-            <link>https://agentic-patterns.com/patterns/402-first-machine-payments</link>
-            <guid isPermaLink="true">https://agentic-patterns.com/patterns/402-first-machine-payments</guid>
+            <title><![CDATA[Action-Selector Pattern]]></title>
+            <description><![CDATA[LLM maps user intent to a pre-approved action ID with schema-validated parameters, and tool outputs never return to the selector]]></description>
+            <link>https://agentic-patterns.com/patterns/action-selector-pattern</link>
+            <guid isPermaLink="true">https://agentic-patterns.com/patterns/action-selector-pattern</guid>
             <category><![CDATA[Orchestration & Control]]></category>
-            <category><![CDATA[payments]]></category>
-            <category><![CDATA[micropayments]]></category>
-            <category><![CDATA[x402]]></category>
-            <category><![CDATA[http-402]]></category>
-            <category><![CDATA[agent-commerce]]></category>
+            <category><![CDATA[prompt-injection]]></category>
+            <category><![CDATA[control-flow]]></category>
+            <category><![CDATA[safety]]></category>
             <category><![CDATA[tool-use]]></category>
-            <category><![CDATA[budget-guards]]></category>
-            <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
+            <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Classify-Then-Act for Background Agents]]></title>
-            <description><![CDATA[Sorts each task into has-default, needs-intent, or out-of-scope, builds only has-default work in a sandbox, and queues it for human review]]></description>
-            <link>https://agentic-patterns.com/patterns/classify-then-act-for-background-agents</link>
-            <guid isPermaLink="true">https://agentic-patterns.com/patterns/classify-then-act-for-background-agents</guid>
-            <category><![CDATA[Orchestration & Control]]></category>
-            <category><![CDATA[background-agents]]></category>
-            <category><![CDATA[task-triage]]></category>
-            <category><![CDATA[sandboxed-build]]></category>
-            <category><![CDATA[review-queue]]></category>
-            <category><![CDATA[autonomy-boundary]]></category>
-            <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Design-Time File Partition as Concurrency Control]]></title>
-            <description><![CDATA[Each task declares every path it will write; overlapping tasks get a blocking dependency so only disjoint work runs at once on a shared checkout]]></description>
-            <link>https://agentic-patterns.com/patterns/design-time-file-partition</link>
-            <guid isPermaLink="true">https://agentic-patterns.com/patterns/design-time-file-partition</guid>
-            <category><![CDATA[Orchestration & Control]]></category>
-            <category><![CDATA[multi-agent]]></category>
-            <category><![CDATA[concurrency]]></category>
-            <category><![CDATA[decomposition]]></category>
-            <category><![CDATA[task-queue]]></category>
-            <category><![CDATA[shared-checkout]]></category>
-            <category><![CDATA[headless]]></category>
-            <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Evidence Questions, Not Verdict Questions]]></title>
-            <description><![CDATA[Never ask the model for allow/ask/block. Ask it narrow, typed, observational questions and let code reduce the answers to the verdict, because the collapsed question is the low-confidence one.]]></description>
-            <link>https://agentic-patterns.com/patterns/evidence-questions-not-verdict-questions</link>
-            <guid isPermaLink="true">https://agentic-patterns.com/patterns/evidence-questions-not-verdict-questions</guid>
-            <category><![CDATA[Security & Safety]]></category>
-            <category><![CDATA[policy-authoring]]></category>
-            <category><![CDATA[admission-control]]></category>
-            <category><![CDATA[decomposition]]></category>
-            <category><![CDATA[calibration]]></category>
-            <category><![CDATA[confidence]]></category>
-            <category><![CDATA[guard-rails]]></category>
-            <category><![CDATA[determinism]]></category>
-            <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Non-Generative Judgment Routing with Typed Escalation]]></title>
-            <description><![CDATA[Sends decision-only loop steps as batched typed questions to a non-generative judgment model and escalates what it cannot answer back to the LLM]]></description>
-            <link>https://agentic-patterns.com/patterns/non-generative-judgment-routing</link>
-            <guid isPermaLink="true">https://agentic-patterns.com/patterns/non-generative-judgment-routing</guid>
-            <category><![CDATA[Orchestration & Control]]></category>
-            <category><![CDATA[routing]]></category>
-            <category><![CDATA[latency]]></category>
-            <category><![CDATA[structured-outputs]]></category>
-            <category><![CDATA[classification]]></category>
-            <category><![CDATA[escalation]]></category>
-            <category><![CDATA[orchestration]]></category>
-            <category><![CDATA[agent-loops]]></category>
-            <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[One OS User per Agent]]></title>
-            <description><![CDATA[Give each long-lived agent its own OS user account and a templated init-system unit, so identity, supervision and privilege come from the host instead of from a per-agent container.]]></description>
-            <link>https://agentic-patterns.com/patterns/one-os-user-per-agent</link>
-            <guid isPermaLink="true">https://agentic-patterns.com/patterns/one-os-user-per-agent</guid>
-            <category><![CDATA[Security & Safety]]></category>
-            <category><![CDATA[isolation]]></category>
-            <category><![CDATA[multi-agent]]></category>
-            <category><![CDATA[systemd]]></category>
-            <category><![CDATA[process-identity]]></category>
-            <category><![CDATA[least-privilege]]></category>
-            <category><![CDATA[long-running-agents]]></category>
-            <category><![CDATA[audit-trail]]></category>
-            <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Out-of-Process Provider-Boundary Replay]]></title>
-            <description><![CDATA[Capture an agent run at the model-provider HTTP boundary from outside the process, then serve those bytes back so the agent re-executes its own logic with no provider call.]]></description>
-            <link>https://agentic-patterns.com/patterns/out-of-process-provider-boundary-replay</link>
-            <guid isPermaLink="true">https://agentic-patterns.com/patterns/out-of-process-provider-boundary-replay</guid>
-            <category><![CDATA[Reliability & Eval]]></category>
-            <category><![CDATA[record-replay]]></category>
-            <category><![CDATA[determinism]]></category>
-            <category><![CDATA[regression-testing]]></category>
-            <category><![CDATA[http-boundary]]></category>
-            <category><![CDATA[offline]]></category>
-            <category><![CDATA[instrumentation-free]]></category>
-            <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Precomputed Code Graph Lookup]]></title>
-            <description><![CDATA[Answer an agent's structural code questions from a precomputed, deterministic graph queried by intent-shaped verbs, instead of a retrieval-time search-and-read loop.]]></description>
-            <link>https://agentic-patterns.com/patterns/precomputed-code-graph-lookup</link>
-            <guid isPermaLink="true">https://agentic-patterns.com/patterns/precomputed-code-graph-lookup</guid>
-            <category><![CDATA[Tool Use & Environment]]></category>
-            <category><![CDATA[code-graph]]></category>
-            <category><![CDATA[static-analysis]]></category>
-            <category><![CDATA[precomputed-index]]></category>
-            <category><![CDATA[impact-analysis]]></category>
-            <category><![CDATA[deterministic]]></category>
-            <category><![CDATA[tree-sitter]]></category>
-            <category><![CDATA[tool-design]]></category>
-            <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Skill Activation as a Precision/Recall Measurement]]></title>
-            <description><![CDATA[Measures skill routing as classification with a labelled prompt dataset, per-skill precision and recall, and CI thresholds that fail the build]]></description>
-            <link>https://agentic-patterns.com/patterns/skill-activation-as-precision-recall</link>
-            <guid isPermaLink="true">https://agentic-patterns.com/patterns/skill-activation-as-precision-recall</guid>
-            <category><![CDATA[Reliability & Eval]]></category>
-            <category><![CDATA[evals]]></category>
-            <category><![CDATA[skills]]></category>
-            <category><![CDATA[routing]]></category>
-            <category><![CDATA[precision-recall]]></category>
-            <category><![CDATA[classification]]></category>
-            <category><![CDATA[ci-cd]]></category>
-            <category><![CDATA[regression-testing]]></category>
-            <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Tier Auto-Apply by Mechanical Impact]]></title>
-            <description><![CDATA[Decides which self-proposed changes auto-apply by matching the real diff's file paths and change kinds against a trusted tier table, not by finding text]]></description>
-            <link>https://agentic-patterns.com/patterns/tier-auto-apply-by-mechanical-impact</link>
-            <guid isPermaLink="true">https://agentic-patterns.com/patterns/tier-auto-apply-by-mechanical-impact</guid>
-            <category><![CDATA[Reliability & Eval]]></category>
-            <category><![CDATA[auto-apply]]></category>
-            <category><![CDATA[tiered-autonomy]]></category>
-            <category><![CDATA[self-improving-agent]]></category>
-            <category><![CDATA[findings-triage]]></category>
-            <category><![CDATA[reversibility]]></category>
-            <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Cross-Domain Agent Conflict Resolution]]></title>
-            <description><![CDATA[A coordination layer that cross-references recommendations from independent domain agents, detects conflicts on shared resources, and resolves them through policy-as-code.]]></description>
-            <link>https://agentic-patterns.com/patterns/cross-domain-agent-conflict-resolution</link>
-            <guid isPermaLink="true">https://agentic-patterns.com/patterns/cross-domain-agent-conflict-resolution</guid>
-            <category><![CDATA[Orchestration & Control]]></category>
-            <category><![CDATA[multi-agent]]></category>
-            <category><![CDATA[conflict-resolution]]></category>
-            <category><![CDATA[policy-as-code]]></category>
-            <category><![CDATA[governance]]></category>
-            <category><![CDATA[orchestration]]></category>
-            <category><![CDATA[drift-detection]]></category>
-            <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Deterministic Grader in the Loop]]></title>
-            <description><![CDATA[Replace the LLM-as-judge in an agent's self-review loop with a deterministic scorer that returns the raw counts behind each sub-score, so the agent has something specific to fix.]]></description>
-            <link>https://agentic-patterns.com/patterns/deterministic-grader-in-the-loop</link>
-            <guid isPermaLink="true">https://agentic-patterns.com/patterns/deterministic-grader-in-the-loop</guid>
-            <category><![CDATA[Feedback Loops]]></category>
-            <category><![CDATA[feedback-loop]]></category>
-            <category><![CDATA[self-critique]]></category>
-            <category><![CDATA[evaluation]]></category>
-            <category><![CDATA[determinism]]></category>
-            <category><![CDATA[llm-as-judge]]></category>
-            <category><![CDATA[reproducibility]]></category>
-            <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Dual-Rail Message Delivery]]></title>
-            <description><![CDATA[Sends every inter-agent message on two independent channels through one entry point, alerts when the rails diverge, and requires ACKs to confirm completion]]></description>
-            <link>https://agentic-patterns.com/patterns/dual-rail-message-delivery</link>
-            <guid isPermaLink="true">https://agentic-patterns.com/patterns/dual-rail-message-delivery</guid>
+            <title><![CDATA[Board-Mediated Async Inter-Agent Coordination]]></title>
+            <description><![CDATA[Routes agent-to-agent messages through comment threads on board cards, with a prefix that creates an inbox card to notify the target agent]]></description>
+            <link>https://agentic-patterns.com/patterns/board-mediated-inter-agent-coordination</link>
+            <guid isPermaLink="true">https://agentic-patterns.com/patterns/board-mediated-inter-agent-coordination</guid>
             <category><![CDATA[Orchestration & Control]]></category>
             <category><![CDATA[multi-agent]]></category>
             <category><![CDATA[coordination]]></category>
-            <category><![CDATA[message-bus]]></category>
+            <category><![CDATA[async]]></category>
+            <category><![CDATA[kanban]]></category>
+            <category><![CDATA[board]]></category>
+            <category><![CDATA[message-routing]]></category>
+            <category><![CDATA[inbox]]></category>
+            <category><![CDATA[session-continuity]]></category>
+            <category><![CDATA[audit-trail]]></category>
+            <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Budget-Aware Model Routing with Hard Cost Caps]]></title>
+            <description><![CDATA[Routes each request to the cheapest model that meets its needs under hard cost caps, and escalates only when quality gates fail]]></description>
+            <link>https://agentic-patterns.com/patterns/budget-aware-model-routing-with-hard-cost-caps</link>
+            <guid isPermaLink="true">https://agentic-patterns.com/patterns/budget-aware-model-routing-with-hard-cost-caps</guid>
+            <category><![CDATA[Orchestration & Control]]></category>
+            <category><![CDATA[routing]]></category>
+            <category><![CDATA[cost-control]]></category>
+            <category><![CDATA[multi-model]]></category>
+            <category><![CDATA[orchestration]]></category>
             <category><![CDATA[reliability]]></category>
-            <category><![CDATA[redundancy]]></category>
-            <category><![CDATA[fault-detection]]></category>
-            <category><![CDATA[human-in-the-loop]]></category>
+            <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Continuous Autonomous Task Loop Pattern]]></title>
+            <description><![CDATA[Runs a loop where subagents pick the next task from a todo file, execute it in fresh context, commit it, and back off on rate limits]]></description>
+            <link>https://agentic-patterns.com/patterns/continuous-autonomous-task-loop-pattern</link>
+            <guid isPermaLink="true">https://agentic-patterns.com/patterns/continuous-autonomous-task-loop-pattern</guid>
+            <category><![CDATA[Orchestration & Control]]></category>
+            <category><![CDATA[autonomous-execution]]></category>
+            <category><![CDATA[task-loop]]></category>
+            <category><![CDATA[rate-limiting]]></category>
+            <category><![CDATA[git-automation]]></category>
+            <category><![CDATA[cli-driven]]></category>
+            <category><![CDATA[stream-processing]]></category>
+            <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Cross-Cycle Consensus Relay]]></title>
+            <description><![CDATA[Each loop cycle reads a structured relay document, does its work, and atomically writes back decisions, open questions, and the single next action]]></description>
+            <link>https://agentic-patterns.com/patterns/cross-cycle-consensus-relay</link>
+            <guid isPermaLink="true">https://agentic-patterns.com/patterns/cross-cycle-consensus-relay</guid>
+            <category><![CDATA[Orchestration & Control]]></category>
+            <category><![CDATA[multi-agent]]></category>
+            <category><![CDATA[state-management]]></category>
+            <category><![CDATA[persistence]]></category>
+            <category><![CDATA[long-running-tasks]]></category>
+            <category><![CDATA[orchestration]]></category>
+            <category><![CDATA[autonomous-loops]]></category>
+            <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Custom Sandboxed Background Agent]]></title>
+            <description><![CDATA[Builds an in-house background coding agent that runs in sandboxed dev environments, streams progress over WebSocket, and iterates on compiler and test feedback]]></description>
+            <link>https://agentic-patterns.com/patterns/custom-sandboxed-background-agent</link>
+            <guid isPermaLink="true">https://agentic-patterns.com/patterns/custom-sandboxed-background-agent</guid>
+            <category><![CDATA[Orchestration & Control]]></category>
+            <category><![CDATA[background-agent]]></category>
+            <category><![CDATA[sandboxed]]></category>
+            <category><![CDATA[model-agnostic]]></category>
+            <category><![CDATA[real-time]]></category>
+            <category><![CDATA[websocket]]></category>
+            <category><![CDATA[custom-infra]]></category>
+            <category><![CDATA[iterative]]></category>
+            <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Declarative Multi-Agent Topology Definition]]></title>
+            <description><![CDATA[Define multi-agent systems declaratively in a single topology file — agents, flows, gates, hooks, group chats — then compile to platform-specific configurations for any agentic framework.]]></description>
+            <link>https://agentic-patterns.com/patterns/declarative-multi-agent-topology-definition</link>
+            <guid isPermaLink="true">https://agentic-patterns.com/patterns/declarative-multi-agent-topology-definition</guid>
+            <category><![CDATA[Orchestration & Control]]></category>
+            <category><![CDATA[multi-agent]]></category>
+            <category><![CDATA[topology]]></category>
+            <category><![CDATA[declarative]]></category>
+            <category><![CDATA[orchestration]]></category>
+            <category><![CDATA[scaffolding]]></category>
+            <category><![CDATA[pipeline]]></category>
+            <category><![CDATA[fan-out]]></category>
+            <category><![CDATA[supervisor]]></category>
+            <category><![CDATA[gate]]></category>
+            <category><![CDATA[cross-platform]]></category>
+            <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Deterministic Zero-LLM Orchestration]]></title>
+            <description><![CDATA[A deterministic code orchestrator splits goals, runs parallel coding agents, verifies with tests, and commits, spending LLM tokens only on the one-time goal decomposition]]></description>
+            <link>https://agentic-patterns.com/patterns/deterministic-zero-llm-orchestration</link>
+            <guid isPermaLink="true">https://agentic-patterns.com/patterns/deterministic-zero-llm-orchestration</guid>
+            <category><![CDATA[Orchestration & Control]]></category>
+            <category><![CDATA[orchestration]]></category>
+            <category><![CDATA[multi-agent]]></category>
+            <category><![CDATA[parallel-execution]]></category>
+            <category><![CDATA[deterministic]]></category>
+            <category><![CDATA[test-driven]]></category>
+            <category><![CDATA[zero-llm-overhead]]></category>
+            <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Discrete Phase Separation]]></title>
+            <description><![CDATA[Splits work into separate research, planning, and implementation conversations, each with fresh context, passing only distilled outputs between phases]]></description>
+            <link>https://agentic-patterns.com/patterns/discrete-phase-separation</link>
+            <guid isPermaLink="true">https://agentic-patterns.com/patterns/discrete-phase-separation</guid>
+            <category><![CDATA[Orchestration & Control]]></category>
+            <category><![CDATA[orchestration]]></category>
+            <category><![CDATA[planning]]></category>
+            <category><![CDATA[research]]></category>
+            <category><![CDATA[context-management]]></category>
+            <category><![CDATA[multi-model]]></category>
+            <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Distributed Execution with Cloud Workers]]></title>
+            <description><![CDATA[Runs many agent sessions in parallel on cloud workers, each in its own git worktree, with dependency-aware scheduling, merge coordination, and approval gates]]></description>
+            <link>https://agentic-patterns.com/patterns/distributed-execution-cloud-workers</link>
+            <guid isPermaLink="true">https://agentic-patterns.com/patterns/distributed-execution-cloud-workers</guid>
+            <category><![CDATA[Orchestration & Control]]></category>
             <category><![CDATA[distributed-systems]]></category>
-            <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
+            <category><![CDATA[parallelization]]></category>
+            <category><![CDATA[cloud]]></category>
+            <category><![CDATA[worktrees]]></category>
+            <category><![CDATA[scalability]]></category>
+            <category><![CDATA[team-coordination]]></category>
+            <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Evidence-Layered Evaluation for Interactive Agents]]></title>
-            <description><![CDATA[Scores interactive agent runs on a task outcome assertion and links each result to layered evidence: actions, screenshots, replays, network, and messages]]></description>
-            <link>https://agentic-patterns.com/patterns/evidence-layered-evaluation-for-interactive-agents</link>
-            <guid isPermaLink="true">https://agentic-patterns.com/patterns/evidence-layered-evaluation-for-interactive-agents</guid>
-            <category><![CDATA[Reliability & Eval]]></category>
+            <title><![CDATA[Dual LLM Pattern]]></title>
+            <description><![CDATA[Splits work between a privileged LLM that calls tools but never sees untrusted data and a quarantined LLM that reads untrusted data but has no tools]]></description>
+            <link>https://agentic-patterns.com/patterns/dual-llm-pattern</link>
+            <guid isPermaLink="true">https://agentic-patterns.com/patterns/dual-llm-pattern</guid>
+            <category><![CDATA[Orchestration & Control]]></category>
+            <category><![CDATA[privilege-separation]]></category>
+            <category><![CDATA[quarantined-llm]]></category>
+            <category><![CDATA[symbolic-variables]]></category>
+            <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Factory over Assistant]]></title>
+            <description><![CDATA[Spawns several autonomous agents in parallel with automated feedback loops such as tests and builds, and checks on them later instead of watching one agent]]></description>
+            <link>https://agentic-patterns.com/patterns/factory-over-assistant</link>
+            <guid isPermaLink="true">https://agentic-patterns.com/patterns/factory-over-assistant</guid>
+            <category><![CDATA[Orchestration & Control]]></category>
+            <category><![CDATA[parallelism]]></category>
+            <category><![CDATA[autonomous-agents]]></category>
+            <category><![CDATA[factory]]></category>
+            <category><![CDATA[assistant]]></category>
+            <category><![CDATA[sidebar]]></category>
+            <category><![CDATA[orchestration]]></category>
+            <category><![CDATA[asynchronous-work]]></category>
+            <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Feature List as Immutable Contract]]></title>
+            <description><![CDATA[Defines every feature up front in a JSON list with acceptance steps; the agent may only flip a feature to passing after it verifies it]]></description>
+            <link>https://agentic-patterns.com/patterns/feature-list-as-immutable-contract</link>
+            <guid isPermaLink="true">https://agentic-patterns.com/patterns/feature-list-as-immutable-contract</guid>
+            <category><![CDATA[Orchestration & Control]]></category>
+            <category><![CDATA[scope-control]]></category>
+            <category><![CDATA[acceptance-criteria]]></category>
+            <category><![CDATA[anti-scope-creep]]></category>
+            <category><![CDATA[long-running-agents]]></category>
+            <category><![CDATA[task-management]]></category>
+            <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Hybrid LLM/Code Workflow Coordinator]]></title>
+            <description><![CDATA[Lets each workflow pick an LLM or a code script as its coordinator, so teams prototype with the LLM and move to reviewed code when determinism matters]]></description>
+            <link>https://agentic-patterns.com/patterns/hybrid-llm-code-workflow-coordinator</link>
+            <guid isPermaLink="true">https://agentic-patterns.com/patterns/hybrid-llm-code-workflow-coordinator</guid>
+            <category><![CDATA[Orchestration & Control]]></category>
+            <category><![CDATA[hybrid]]></category>
+            <category><![CDATA[llm-driven]]></category>
+            <category><![CDATA[code-driven]]></category>
+            <category><![CDATA[coordinator]]></category>
+            <category><![CDATA[determinism]]></category>
+            <category><![CDATA[workflow-orchestration]]></category>
+            <category><![CDATA[progressive-enhancement]]></category>
+            <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Initializer-Maintainer Dual Agent Architecture]]></title>
+            <description><![CDATA[Uses a one-time initializer agent to create the feature list, progress files, and bootstrap script, then a coding agent that resumes from them one feature per session]]></description>
+            <link>https://agentic-patterns.com/patterns/initializer-maintainer-dual-agent</link>
+            <guid isPermaLink="true">https://agentic-patterns.com/patterns/initializer-maintainer-dual-agent</guid>
+            <category><![CDATA[Orchestration & Control]]></category>
+            <category><![CDATA[long-running-agents]]></category>
+            <category><![CDATA[session-handoff]]></category>
+            <category><![CDATA[lifecycle-specialization]]></category>
+            <category><![CDATA[project-bootstrap]]></category>
+            <category><![CDATA[incremental-development]]></category>
+            <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Inversion of Control]]></title>
+            <description><![CDATA[Gives the agent tools, a high-level objective, and guardrails, then lets it choose sequencing and recovery while humans set policy and review]]></description>
+            <link>https://agentic-patterns.com/patterns/inversion-of-control</link>
+            <guid isPermaLink="true">https://agentic-patterns.com/patterns/inversion-of-control</guid>
+            <category><![CDATA[Orchestration & Control]]></category>
+            <category><![CDATA[orchestration]]></category>
+            <category><![CDATA[autonomy]]></category>
+            <category><![CDATA[control]]></category>
+            <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Iterative Multi-Agent Brainstorming]]></title>
+            <description><![CDATA[Spawns several agents in parallel on the same problem, often with different perspectives, then merges their ideas into one set of options]]></description>
+            <link>https://agentic-patterns.com/patterns/iterative-multi-agent-brainstorming</link>
+            <guid isPermaLink="true">https://agentic-patterns.com/patterns/iterative-multi-agent-brainstorming</guid>
+            <category><![CDATA[Orchestration & Control]]></category>
+            <category><![CDATA[multi-agent]]></category>
+            <category><![CDATA[brainstorming]]></category>
+            <category><![CDATA[parallel processing]]></category>
+            <category><![CDATA[idea generation]]></category>
+            <category><![CDATA[sub-agents]]></category>
+            <category><![CDATA[collaborative ideation]]></category>
+            <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Language Agent Tree Search (LATS)]]></title>
+            <description><![CDATA[Runs Monte Carlo Tree Search over reasoning steps, with the LLM generating candidate actions and scoring partial solutions to pick the best path]]></description>
+            <link>https://agentic-patterns.com/patterns/language-agent-tree-search-lats</link>
+            <guid isPermaLink="true">https://agentic-patterns.com/patterns/language-agent-tree-search-lats</guid>
+            <category><![CDATA[Orchestration & Control]]></category>
+            <category><![CDATA[search]]></category>
+            <category><![CDATA[monte-carlo]]></category>
+            <category><![CDATA[tree-search]]></category>
+            <category><![CDATA[reasoning]]></category>
+            <category><![CDATA[planning]]></category>
+            <category><![CDATA[reflection]]></category>
             <category><![CDATA[evaluation]]></category>
-            <category><![CDATA[browser-agents]]></category>
-            <category><![CDATA[computer-use]]></category>
-            <category><![CDATA[reproducibility]]></category>
-            <category><![CDATA[observability]]></category>
-            <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
+            <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Exact-Action Authorization Binding]]></title>
-            <description><![CDATA[Bind a short-lived approval to the complete action presented to the reviewer, then rederive and compare that identity at the acting boundary before execution.]]></description>
-            <link>https://agentic-patterns.com/patterns/exact-action-authorization-binding</link>
-            <guid isPermaLink="true">https://agentic-patterns.com/patterns/exact-action-authorization-binding</guid>
-            <category><![CDATA[Security & Safety]]></category>
-            <category><![CDATA[authorization]]></category>
-            <category><![CDATA[approval]]></category>
-            <category><![CDATA[tool-use]]></category>
-            <category><![CDATA[action-binding]]></category>
-            <category><![CDATA[TOCTOU]]></category>
-            <category><![CDATA[receipts]]></category>
-            <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
+            <title><![CDATA[LLM Map-Reduce Pattern]]></title>
+            <description><![CDATA[Processes each untrusted document in its own sandboxed LLM call with a constrained output, then aggregates the results with deterministic code]]></description>
+            <link>https://agentic-patterns.com/patterns/llm-map-reduce-pattern</link>
+            <guid isPermaLink="true">https://agentic-patterns.com/patterns/llm-map-reduce-pattern</guid>
+            <category><![CDATA[Orchestration & Control]]></category>
+            <category><![CDATA[map-reduce]]></category>
+            <category><![CDATA[sub-agents]]></category>
+            <category><![CDATA[isolation]]></category>
+            <category><![CDATA[untrusted-data]]></category>
+            <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Filesystem-Mediated Host Delegation]]></title>
-            <description><![CDATA[Lets a sandboxed agent write request files to a shared spool directory that a host daemon runs against a whitelist, with idempotent results the agent polls for]]></description>
-            <link>https://agentic-patterns.com/patterns/filesystem-mediated-host-delegation</link>
-            <guid isPermaLink="true">https://agentic-patterns.com/patterns/filesystem-mediated-host-delegation</guid>
-            <category><![CDATA[Tool Use & Environment]]></category>
-            <category><![CDATA[sandbox-escape]]></category>
-            <category><![CDATA[host-execution]]></category>
-            <category><![CDATA[async-rpc]]></category>
-            <category><![CDATA[idempotency]]></category>
-            <category><![CDATA[spool-directory]]></category>
-            <category><![CDATA[durability]]></category>
-            <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Own-Check Fault Injection]]></title>
-            <description><![CDATA[Plant a controlled fault inside a running agent pipeline and score whether the pipeline's own checks emit a detection act, keeping detected, reacted and recovered as separate verdicts.]]></description>
-            <link>https://agentic-patterns.com/patterns/own-check-fault-injection</link>
-            <guid isPermaLink="true">https://agentic-patterns.com/patterns/own-check-fault-injection</guid>
-            <category><![CDATA[Reliability & Eval]]></category>
-            <category><![CDATA[fault-injection]]></category>
-            <category><![CDATA[evals]]></category>
-            <category><![CDATA[reliability]]></category>
-            <category><![CDATA[self-verification]]></category>
-            <category><![CDATA[guardrails]]></category>
-            <category><![CDATA[chaos-engineering]]></category>
-            <category><![CDATA[observability]]></category>
-            <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Rendered UI Finish Gate]]></title>
-            <description><![CDATA[Verify an agent-built interface against its intended design contract, required states, interaction semantics, and rendered output before merging.]]></description>
-            <link>https://agentic-patterns.com/patterns/rendered-ui-finish-gate</link>
-            <guid isPermaLink="true">https://agentic-patterns.com/patterns/rendered-ui-finish-gate</guid>
-            <category><![CDATA[Feedback Loops]]></category>
-            <category><![CDATA[ui-quality]]></category>
-            <category><![CDATA[frontend]]></category>
-            <category><![CDATA[coding-agents]]></category>
-            <category><![CDATA[verification]]></category>
-            <category><![CDATA[design-systems]]></category>
-            <category><![CDATA[feedback-loops]]></category>
-            <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Persistent Test Memory Feedback Loop]]></title>
-            <description><![CDATA[Preserve validated test lessons so an agent can reuse successful paths, recognize recurring failures, and retire stale knowledge.]]></description>
-            <link>https://agentic-patterns.com/patterns/persistent-test-memory-feedback-loop</link>
-            <guid isPermaLink="true">https://agentic-patterns.com/patterns/persistent-test-memory-feedback-loop</guid>
-            <category><![CDATA[Learning & Adaptation]]></category>
-            <category><![CDATA[testing-agents]]></category>
-            <category><![CDATA[persistent-memory]]></category>
-            <category><![CDATA[feedback-loop]]></category>
-            <category><![CDATA[self-healing]]></category>
-            <category><![CDATA[regression-testing]]></category>
-            <pubDate>Sun, 16 Aug 2026 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Consequence-Family Coverage Audit]]></title>
-            <description><![CDATA[Audit an agent's risk policy by enumerating families of consequence and asking which rule covers each, because a hand-written risk list reliably encodes one family and stays silent on the rest]]></description>
-            <link>https://agentic-patterns.com/patterns/consequence-family-coverage-audit</link>
-            <guid isPermaLink="true">https://agentic-patterns.com/patterns/consequence-family-coverage-audit</guid>
-            <category><![CDATA[Security & Safety]]></category>
-            <category><![CDATA[risk-classification]]></category>
-            <category><![CDATA[policy-authoring]]></category>
-            <category><![CDATA[coverage-testing]]></category>
-            <category><![CDATA[admission-control]]></category>
-            <category><![CDATA[blind-spots]]></category>
-            <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
+            <title><![CDATA[Markdown Polis — Multi-Vendor Agent Coordination via Filesystem Constitution]]></title>
+            <description><![CDATA[Coordinates agents from different vendors through versioned markdown files: capability cards, work contracts, and bandit routing that learns from settled work]]></description>
+            <link>https://agentic-patterns.com/patterns/markdown-polis-coordination</link>
+            <guid isPermaLink="true">https://agentic-patterns.com/patterns/markdown-polis-coordination</guid>
+            <category><![CDATA[Orchestration & Control]]></category>
+            <category><![CDATA[multi-agent]]></category>
+            <category><![CDATA[coordination]]></category>
+            <category><![CDATA[markdown]]></category>
+            <category><![CDATA[bandit-routing]]></category>
+            <category><![CDATA[governance]]></category>
+            <category><![CDATA[vendor-agnostic]]></category>
+            <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
