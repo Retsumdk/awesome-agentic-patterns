@@ -4,8 +4,34 @@
         <description><![CDATA[New and updated AI agent design patterns.]]></description>
         <link>https://agentic-patterns.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 26 Sep 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 13 Oct 2026 00:00:00 GMT</lastBuildDate>
         <atom:link href="https://agentic-patterns.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Background Agent with CI Feedback]]></title>
+            <description><![CDATA[Runs the agent in the background on its own branch and uses CI results as feedback to patch failures until green or blocked]]></description>
+            <link>https://agentic-patterns.com/patterns/background-agent-ci</link>
+            <guid isPermaLink="true">https://agentic-patterns.com/patterns/background-agent-ci</guid>
+            <category><![CDATA[Feedback Loops]]></category>
+            <category><![CDATA[asynchronous]]></category>
+            <category><![CDATA[ci]]></category>
+            <category><![CDATA[feedback]]></category>
+            <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Capability-Escrow-Receipt]]></title>
+            <description><![CDATA[Binds a signed capability listing, an atomic escrow-plus-hire step, and a signed work receipt into one loop for agent-to-agent payment]]></description>
+            <link>https://agentic-patterns.com/patterns/capability-escrow-receipt</link>
+            <guid isPermaLink="true">https://agentic-patterns.com/patterns/capability-escrow-receipt</guid>
+            <category><![CDATA[Orchestration & Control]]></category>
+            <category><![CDATA[multi-agent]]></category>
+            <category><![CDATA[coordination]]></category>
+            <category><![CDATA[payments]]></category>
+            <category><![CDATA[escrow]]></category>
+            <category><![CDATA[receipts]]></category>
+            <category><![CDATA[capabilities]]></category>
+            <category><![CDATA[atomic-hire]]></category>
+            <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[402-First Machine Payments (Price-Before-Work Tool Purchases)]]></title>
             <description><![CDATA[Server returns an HTTP 402 price quote before doing work, and the agent pays the exact amount only if it fits its budget cap]]></description>
@@ -263,32 +289,6 @@
             <category><![CDATA[design-systems]]></category>
             <category><![CDATA[feedback-loops]]></category>
             <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Persistent Test Memory Feedback Loop]]></title>
-            <description><![CDATA[Preserve validated test lessons so an agent can reuse successful paths, recognize recurring failures, and retire stale knowledge.]]></description>
-            <link>https://agentic-patterns.com/patterns/persistent-test-memory-feedback-loop</link>
-            <guid isPermaLink="true">https://agentic-patterns.com/patterns/persistent-test-memory-feedback-loop</guid>
-            <category><![CDATA[Learning & Adaptation]]></category>
-            <category><![CDATA[testing-agents]]></category>
-            <category><![CDATA[persistent-memory]]></category>
-            <category><![CDATA[feedback-loop]]></category>
-            <category><![CDATA[self-healing]]></category>
-            <category><![CDATA[regression-testing]]></category>
-            <pubDate>Sun, 16 Aug 2026 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Consequence-Family Coverage Audit]]></title>
-            <description><![CDATA[Audit an agent's risk policy by enumerating families of consequence and asking which rule covers each, because a hand-written risk list reliably encodes one family and stays silent on the rest]]></description>
-            <link>https://agentic-patterns.com/patterns/consequence-family-coverage-audit</link>
-            <guid isPermaLink="true">https://agentic-patterns.com/patterns/consequence-family-coverage-audit</guid>
-            <category><![CDATA[Security & Safety]]></category>
-            <category><![CDATA[risk-classification]]></category>
-            <category><![CDATA[policy-authoring]]></category>
-            <category><![CDATA[coverage-testing]]></category>
-            <category><![CDATA[admission-control]]></category>
-            <category><![CDATA[blind-spots]]></category>
-            <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
